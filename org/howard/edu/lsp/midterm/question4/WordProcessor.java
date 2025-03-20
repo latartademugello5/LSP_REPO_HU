@@ -58,6 +58,3 @@ public class WordProcessor {
     }
 }
 
-
-// Source: https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
-// Source: https://www.baeldung.com/java-string-processing
