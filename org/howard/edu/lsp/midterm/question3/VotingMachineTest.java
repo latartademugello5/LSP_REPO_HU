@@ -25,8 +25,8 @@ public class VotingMachineTest {
         vm.castVote("Henry");
         
         // Attempt to vote for a non-existent candidate
-        boolean success = vm.castVote("Eve");
-        System.out.println("Vote for Eve successful? " + success);
+        boolean success = vm.castVote("Tye");
+        System.out.println("Vote for Tye successful? " + success);
         
         // Displaying results
         System.out.println("Winner: " + vm.getWinner());
