@@ -42,6 +42,3 @@ public class WordProcessorDriver {
         // Expected Output: [A, b, C, D, e, f, G, H, I]
     }
 }
-
-// Source: https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
-// Source: https://www.baeldung.com/java-string-processing
