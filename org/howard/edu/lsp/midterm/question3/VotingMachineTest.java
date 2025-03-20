@@ -12,17 +12,17 @@ public class VotingMachineTest {
         VotingMachine vm = new VotingMachine();
         
         // Adding candidates
-        vm.addCandidate("Alice");
-        vm.addCandidate("Bob");
-        vm.addCandidate("Charlie");
+        vm.addCandidate("Cam");
+        vm.addCandidate("Lyle");
+        vm.addCandidate("Henry");
         
         // Casting votes
-        vm.castVote("Alice");
-        vm.castVote("Alice");
-        vm.castVote("Bob");
-        vm.castVote("Charlie");
-        vm.castVote("Charlie");
-        vm.castVote("Charlie");
+        vm.castVote("Cam");
+        vm.castVote("Cam");
+        vm.castVote("Lyle");
+        vm.castVote("Henry");
+        vm.castVote("Henry");
+        vm.castVote("Henry");
         
         // Attempt to vote for a non-existent candidate
         boolean success = vm.castVote("Eve");
