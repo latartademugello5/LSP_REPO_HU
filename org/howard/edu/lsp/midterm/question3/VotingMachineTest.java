@@ -33,5 +33,3 @@ public class VotingMachineTest {
     }
 }
 
-// Source: Oracle Java Documentation - https://docs.oracle.com/en/java/javase/
-// Source: GeeksforGeeks - https://www.geeksforgeeks.org/implementing-a-simple-voting-system-in-java/
