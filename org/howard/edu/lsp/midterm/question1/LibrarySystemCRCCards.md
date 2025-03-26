@@ -3,16 +3,16 @@
 ## Part 1: Identify Classes
 
 ### 1. Book
-**Explanation:** The Book class is needed to represent individual books in the library's collection. It serves as the fundamental entity that members borrow and return, and that librarians manage.
+**Explanation:** Represents individual books in the library’s collection. This class holds details about each book and tracks its availability.
 
 ### 2. Member
-**Explanation:** The Member class is necessary to represent library users who borrow books. This class tracks individual borrowing limits and currently borrowed books.
+**Explanation:** Represents library users who can borrow books. Tracks how many books a member has checked out and enforces the borrowing limit.
 
 ### 3. Librarian
-**Explanation:** The Librarian class is needed to represent staff who manage the library collection. They have special privileges to add, remove, and monitor books in the system.
+**Explanation:** Represents staff responsible for managing the book collection. Librarians can add and remove books and monitor borrowed books.
 
 ### 4. Library
-**Explanation:** The Library class is needed as a central management system that coordinates books, members, and librarians. It maintains the overall collection and facilitates interactions between the other classes.
+**Explanation:** Acts as the central system that manages books, members, and librarians. It keeps track of the collection and borrowing activities.
 
 ## Part 2: Define Responsibilities
 
@@ -31,22 +31,18 @@
 
 ### Library
 1. Maintain the complete collection of books
-2. Track which books are checked out and by whom
+2. Track borrowing records and enforce borrowing limits.
 
 ## Part 3: Identify Collaborators
 
 ### Book
-- **Library:** Collaborates with the Library class because books are part of the library's collection and the Library needs to know each book's status.
-- **Member:** Collaborates with Member class because Members borrow books, changing their availability status.
+- **Library:**The Library manages books, so it must track their status.
 
 ### Member
-- **Book:** Collaborates with Book class to borrow and return specific book instances.
-- **Library:** Collaborates with Library class to access the collection of available books and to record borrowing activity.
+- **Library:** Members interact with the Library to borrow and return books.
 
 ### Librarian
-- **Book:** Collaborates with Book class to add new books and remove existing ones.
-- **Library:** Collaborates with Library class to view and manage the entire collection.
-- **Member:** Collaborates with Member class to see which members have borrowed which books.
+- **Library:**  Librarians manage books through the Library system.
 
 ### Library
 - **Book:** Collaborates with Book class to maintain the collection of all books.
